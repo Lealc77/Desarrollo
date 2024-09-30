@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #9FC4F8;
+    color: #2B78E4;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    background-color: rgba(240, 248, 255, 0.0); /* Fondo transparente con 20% de opacidad */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.0);
+    width: 400px;
+    text-align: center;
+}
+
+  
+  .login-avatar {
+    display: flex; /* Usamos flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 50px;
+  }
+  
+  .login-avatar img {
+    width: 250px; /* Ajusta el ancho de la imagen */
+    height: 200px; /* Ajusta la altura de la imagen */
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .login-field .icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%); /* Centra la imagen verticalmente en el campo */
+    width: 30px; /* Ajusta el tamaño según tu necesidad */
+    height: 30px; /* Ajusta el tamaño según tu necesidad */
+  }
+  
+  
+  .login-field input {
+    width: 100%; /* Ancho del campo de entrada */
+    padding: 10px 45px; /* Ajusta el padding para más espacio interno */
+    border-radius: 40px;
+    border: 3.5px solid #2B78E4; /* Grosor del borde aumentado a 2px */
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco con 50% de opacidad */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+  
+
+
+  .login-button {
+    padding: 10px;
+    background-color: #2B78E4; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    border: 3px solid #000000; /* Grosor del borde aumentado a 2px */
+    box-shadow: 2px 2px 0px 2px #000; /* Sombra del botón */
+  }
+  
+  .login-button:hover {
+    background-color: #146d96; 
+  }
